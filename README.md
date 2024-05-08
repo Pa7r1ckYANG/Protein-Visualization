@@ -16,6 +16,8 @@ After that a broswer window will pop up. From their you can input the protein id
 
 API used: https://www.ebi.ac.uk/proteins/api/proteins
 
+## StreamLit Link: 
+https://protein-visualizer-sc-final-project.streamlit.app/
 ## Authors
 
 - [@Pa7r1ckYANG](https://github.com/Pa7r1ckYANG)
