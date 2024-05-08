@@ -22,4 +22,5 @@ https://protein-visualizer-sc-final-project.streamlit.app/
 
 - [@Pa7r1ckYANG](https://github.com/Pa7r1ckYANG)
 
-
+## Credit
+This project is inspired by [DataProfessor's esmfold project](https://github.com/dataprofessor/esmfold)
