@@ -5,9 +5,9 @@ import ipython_genutils
 import requests
 
 st.sidebar.title('Molecule Visualizer')
-st.sidebar.write({'This molecule visualizer is able to visualize'},
-                 {'the protein based on the protein ID, and label'},
-                 {'residues you wish to visualize'})
+st.sidebar.write('This molecule visualizer is able to visualize'
+                 'the protein based on the protein ID, and label'
+                 'residues you wish to visualize')
 
 
 # stmol
