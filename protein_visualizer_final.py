@@ -57,7 +57,7 @@ def update(sequence=txt1):
             id of the protein
     **Returns**
     """
-    st.subheader('Visualization of predicted protein structure')
+    st.subheader('Visualization of protein structure')
     render_mol(txt1)
 
 
@@ -73,6 +73,7 @@ def annotate(residue=txt2, sequence=txt1):
             id of the protein
     **Returns**
     """
+    st.subheader('Annotation of protein structure')
     xyzview = py3Dmol.view(query=sequence)
     xyzview.setStyle({'cartoon': {'color': 'spectrum'}})
     xyzview.zoomTo()
@@ -90,6 +91,7 @@ def view_sequence(accession=txt3):
             Protein accession number
     **Returns**
     """
+    st.subheader('API application for protein sequence acquirement')
     base_url = "https://www.ebi.ac.uk/proteins/api/proteins"
     data = None
     request_url = f"{base_url}/{txt3}"
@@ -106,7 +108,7 @@ def view_sequence(accession=txt3):
 
             # Print the sequence
             sequence = protein_info['sequence']
-            st.info('Sequence based on the accession number provided:')
+            st.info('API used: "https://www.ebi.ac.uk/proteins/api/proteins"')
             st.info(sequence)
         except ValueError as e:
             # Handle JSON decode error
