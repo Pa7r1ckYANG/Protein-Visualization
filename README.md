@@ -1,1 +1,23 @@
-# Protein-Visualization
+
+# Protein Visualization using StreamLit
+
+This project aimed to develop a web app to visualize protein structures. 
+
+## To Get Started
+Download the *protein_visualizer_final.py* file, and install all modules mentioned in the *requirements.txt* file. 
+## Deployment
+
+To deploy this project run
+
+```bash
+  streamlit run protein_visualizer_final.py
+```
+After that a broswer window will pop up. From their you can input the protein id or Accession number to analyze the protein. 
+
+API used: https://www.ebi.ac.uk/proteins/api/proteins
+
+## Authors
+
+- [@Pa7r1ckYANG](https://github.com/Pa7r1ckYANG)
+
+
