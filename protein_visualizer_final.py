@@ -37,13 +37,13 @@ protein_id = "2lyz"
 txt1 = st.sidebar.text_area('Input Protein Id', protein_id, height=50)
 
 residue = "HIS"
-txt2 = st.sidebar.text_area({'Input residues you want to'},
-                            {'visualize'}, residue, height=50)
+txt2 = st.sidebar.text_area('Input residues you want to'
+                            'visualize', residue, height=50)
 
 accession = "P00698"
-txt3 = st.sidebar.text_area({'Input protein accession number to'},
-                            {'obtain its sequence (can be different from'},
-                            {'the protein you wish to visualize)'},
+txt3 = st.sidebar.text_area('Input protein accession number to'
+                            'obtain its sequence (can be different from'
+                            'the protein you wish to visualize)',
                             accession, height=50)
 
 
@@ -59,12 +59,6 @@ def update(sequence=txt1):
     """
     st.subheader('Visualization of predicted protein structure')
     render_mol(txt1)
-
-    st.download_button(
-        label="Download PDB",
-        file_name=txt1 + '.pdb',
-        mime='text/plain',
-    )
 
 
 def annotate(residue=txt2, sequence=txt1):
